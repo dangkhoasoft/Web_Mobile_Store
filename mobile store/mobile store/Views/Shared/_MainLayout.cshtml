@@ -1,0 +1,231 @@
+﻿
+
+@{
+    ViewBag.Title = "_MainLayout";
+}
+
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="~/asset/css/menu.css">
+    <link rel="stylesheet" href="~/asset/css/button.css">
+    <link rel="stylesheet" href="~/asset/css/products.css">
+    <link rel="stylesheet" href="~/asset/css/sale.css">
+    <link rel="stylesheet" href="~/asset/css/slideshow.css">
+    <link rel="stylesheet" href="~/asset/css/footer.css">
+    <link rel="stylesheet" href="~/asset/css/register.css">
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+    <script src="https://kit.fontawesome.com/eef5d780f9.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6bfef2d2ae.js" crossorigin="anonymous"></script>
+    <div>
+        <header class="header">
+            <div class="bg-second">
+                <div class="top-header container">
+                    <ul class="devided">
+                        <li><a href=""> Hot line: 0366916220 | </a></li>
+
+                        <li><a href="">Phonestore@gmail.com</a></li>
+                    </ul>
+                    <ul class="devided">
+
+
+                        @if (Session["MatKhau"] != null)
+                        {
+                            <li> @Html.ActionLink("Tra cứu đơn hàng |", "LoginAccount", "User")</li>
+                            <li> @Html.ActionLink("thông tin |", "ProfileUser", "User")</li>
+
+                            <li> @Html.ActionLink("Đăng xuất", "LoginAccount", "User")</li>
+
+
+                        }
+                        else
+                        {
+
+                            <li> @Html.ActionLink("Đăng nhập |", "LoginAccount", "User") </li>
+                            <li> @Html.ActionLink("Đăng ký", "RegisterUser", "User")</li>
+                        }
+                    </ul>
+                </div>
+
+            </div>
+            <div class="bg-manin">
+                <div class="mid-header container">
+                    <a href="~/Home/Index"><img src="~/asset/img/banner/logo.png" alt="" width="95px" class="logo"></a>
+                    <div class="search">
+                        <input type="text" placeholder="Tìm kiếm...">
+                        <li><a href=""><i class="fas fa-search"> </i></a></li>
+                    </div>
+                    <ul class="user-menu">
+                        <li><a href=""><i class="fas fa-user"></i></a></li>
+                        <li><a href=""><i class="fas fa-globe"></i></a></li>
+                        <li>
+                           @Html.Action("GioHangPartial","GioHang")
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="bg-second">
+                <div class="bottom-header container">
+                    <ul class="main-menu">
+                        @*@Html.Action("_Menu", "Shop")*@
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="sale">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-money-check"> &emsp14; </i>GIẢM THÊM 10% kHI NHẬP MÃ:
+                            <B><U>Conmeongungok</U></B>
+                            <p>( Đơn hàng đầu tiên từ 600k)</p>
+                        </a>
+                    </li> |
+
+                    <li>
+                        <a href=""> <i class="fas fa-coins"></i> </i> THANH TOÁN KHI NHẬN HÀNG</a>
+                    </li>|
+
+                    <li>
+                        <a href=""> <i class="fas fa-truck"> </i> THÔNG TIN VẬN CHUYỂN</a>
+                    </li>|
+                    <li>
+                        <a href="">
+                            <i class="fas fa-percent">  &emsp14; </i>NHẬN GIẢM GIÁ THÊM 10K
+                            <P>ỨNG DỤNG ĐỘC QUYỀN <b>MÃ GIẢM GIÁ: <u>BOSHOP</u></b> </P>
+                        </a>
+                    </li>
+
+                </ul>
+
+
+            </div>
+        </header>
+
+    </div>
+
+    @RenderBody()
+
+    @* <footer class="footer">
+                <div class="sin">
+                    <div class="footer-row">
+                        <h3>THÔNG TIN LIÊN HỆ</h3>
+                        <ul>
+
+                            <li><a href=""><i class="fas fa-home"></i> &emsp14; </i>Store 1: 165 Bùi Minh Trực,Phường 5, Quận 8</a></li>
+                            <li>
+                                <a href="">
+                                    <i class="fas fa-home"> </i> &emsp14; </i>Store 2: 117 Mèo méo meo mèo meo, Quận Bo
+                                </a>
+                            </li>
+                            <li><a href=""><i class="fas fa-home"></i> &emsp14; </i>Store 3: 187 Hồng Bàng , Quận 5, TP HCM
+                            <li>
+                                <a href="">
+                                    <i class="fas fa-phone"></i> &emsp14; </i> Liên hệ: 0366916527
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fas fa-envelope"></i> &emsp14; </i> Email: Tranducbo@gmail.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-row">
+                        <h3>FOLLOW FANPAGE</h3>
+                        <ul>
+                            <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"> &emsp14; </i> instagram: tranducbonlqda</a></li>
+                            <li><a href=""><i class="fab fa-facebook"> &emsp14; </i> Facebook: Tran Duc BO</a></li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-tiktok">&emsp14; </i> Tiktok: Tranducbo.lqda
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="footer-row">
+                        <h3>FOLLOW US</h3>
+                        <ul class="sub">
+                            <li><a href=""><i class="fab fa-facebook"> &emsp14; </i>FACEBOOK</a></li>
+                            <li>
+                                <a href=""> <i class="fab fa-instagram"> &emsp14;</i>INSTAGRAM</a>
+                            </li>
+                            <li> <a href=""><i class="fab fa-twitter"> &emsp14;</i>TWITTER</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-row">
+                        <img src="Bo 2 .png" alt="">
+                    </div>
+                    <div class="border">
+                        <hr>
+                    </div>
+                    <div class="finally">
+                        <div class="medthod">
+                            <div class="footer-row">
+                                <h3>PHƯƠNG THỨC THANH TOÁN</h3>
+                                <ul>
+                                    <a href=""><img width="70px" src="https://file.hstatic.net/1000273026/file/momo_logo_82104b6e0b5e4eb2acd50f818112368d_grande.png" alt=""></a>
+                                    <a href="">
+                                        <img width="70px" src="data:image/png;base64,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"
+                                             alt="">
+                                    </a>
+                                    <a href=""><img width="70px" src="https://logodix.com/logo/2132132.jpg" alt=""></a>
+                                    <a href=""><img width="70px" src="https://thuthuatmaytinh.vn/wp-content/uploads/2019/02/ZaloPay-logo-300x300.png" alt=""></a>
+                                    <a href=""><img src="https://thumbs.dreamstime.com/b/visa-logo-printed-paper-chisinau-moldova-september-visa-logo-printed-paper-placed-white-background-visa-128373490.jpg" width="67px" alt=""></a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="money">
+                            <div class="footer-row">
+                                <h3> Đối tác giao hàng </h3>
+                                <ul>
+                                    <img src="https://slyclothing.vn/wp-content/uploads/2018/12/ghtk-e1544170775460.png" alt="">
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="footer-row">
+                            <h3></h3>
+                            <ul class="sub">
+
+                                <img src="https://file.hstatic.net/200000116305/file/logosalenoti_cba2943805d2464d9b3b32720e29dbaa.png" width="280px" alt="">
+
+                            </ul>
+                        </div>
+
+                    </div>
+            </footer>
+            <div class="coppyright">
+                <div>
+                    <hr>
+                </div>
+                <p>&#169; copyright 2021 huflit.edu.vn. All rights reserved</p> *@
+            </div>
+        </html>
+
+
+

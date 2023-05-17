@@ -1,0 +1,14 @@
+
+.banner{
+   
+    width: auto;
+    
+   padding: 10px 10px;
+    margin: auto;
+    margin-bottom: 50px;
+  margin-top: 150px;
+  margin-left: -21px;
+}
+.container-fluid {
+  display: flex;
+}

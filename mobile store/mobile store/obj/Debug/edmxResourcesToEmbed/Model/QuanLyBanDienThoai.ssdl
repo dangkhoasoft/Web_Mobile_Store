@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Sell_Mobile_1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="tb_CTDonHang">
+    <Key>
+      <PropertyRef Name="MaDH" />
+      <PropertyRef Name="MaDienThoai" />
+    </Key>
+    <Property Name="MaDH" Type="int" Nullable="false" />
+    <Property Name="MaDienThoai" Type="int" Nullable="false" />
+    <Property Name="SoLuong" Type="int" />
+    <Property Name="DonGia" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="tb_DienThoai">
+    <Key>
+      <PropertyRef Name="MaDienThoai" />
+    </Key>
+    <Property Name="MaDienThoai" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenDienThoai" Type="nvarchar" MaxLength="50" />
+    <Property Name="GiaBan" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Mota" Type="nvarchar(max)" />
+    <Property Name="MaLoai" Type="int" />
+    <Property Name="HinhSP1" Type="nvarchar" MaxLength="50" />
+    <Property Name="HinhSP2" Type="nvarchar" MaxLength="50" />
+    <Property Name="HinhSP3" Type="nvarchar" MaxLength="50" />
+    <Property Name="HinhSP4" Type="nvarchar" MaxLength="50" />
+    <Property Name="KichThuocHinhAnh" Type="nvarchar" MaxLength="200" />
+    <Property Name="Camera_Truoc" Type="nvarchar" MaxLength="100" />
+    <Property Name="Camera_Sau" Type="nvarchar" MaxLength="100" />
+    <Property Name="He_Dieu_Hanh" Type="nvarchar" MaxLength="200" />
+    <Property Name="CPU" Type="nvarchar" MaxLength="200" />
+    <Property Name="RAM" Type="nvarchar" MaxLength="200" />
+    <Property Name="Bo_Nho_Trong" Type="nvarchar" MaxLength="200" />
+    <Property Name="The_Nho" Type="nvarchar" MaxLength="200" />
+    <Property Name="Sim" Type="nvarchar" MaxLength="200" />
+    <Property Name="Ket_Noi" Type="nvarchar" MaxLength="200" />
+    <Property Name="Pin" Type="nvarchar" MaxLength="100" />
+    <Property Name="ChuThich" Type="nvarchar" MaxLength="500" />
+    <Property Name="MaNSX" Type="int" />
+    <Property Name="moi" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_DonHang">
+    <Key>
+      <PropertyRef Name="MaDH" />
+    </Key>
+    <Property Name="MaDH" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NgayDat" Type="datetime" />
+    <Property Name="NgayGiao" Type="datetime" />
+    <Property Name="DaThanToan" Type="nvarchar" MaxLength="50" />
+    <Property Name="TinhTrangGiao" Type="nvarchar" MaxLength="50" />
+    <Property Name="MaKH" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_KhachHang">
+    <Key>
+      <PropertyRef Name="MaKH" />
+    </Key>
+    <Property Name="MaKH" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+    <Property Name="TaiKhoan" Type="nvarchar" MaxLength="50" />
+    <Property Name="MatKhau" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="Diachi" Type="nvarchar" MaxLength="200" />
+    <Property Name="DienThoai" Type="varchar" MaxLength="50" />
+    <Property Name="GioiTinh" Type="nvarchar" MaxLength="3" />
+    <Property Name="NgaySinh" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_LoaiSanPham">
+    <Key>
+      <PropertyRef Name="MaLoaiSP" />
+    </Key>
+    <Property Name="MaLoaiSP" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenLoaiSP" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tb_NhaSanXuat">
+    <Key>
+      <PropertyRef Name="MaNSX" />
+    </Key>
+    <Property Name="MaNSX" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenNSX" Type="nvarchar" MaxLength="50" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="200" />
+    <Property Name="DienThoai" Type="int" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="IDTK" />
+    </Key>
+    <Property Name="IDTK" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenUser" Type="char" MaxLength="20" />
+    <Property Name="MatKhauUsser" Type="char" MaxLength="20" />
+    <Property Name="Email" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <Association Name="FK_tb_CTDonHang_tb_DienThoai1">
+    <End Role="tb_DienThoai" Type="Self.tb_DienThoai" Multiplicity="1" />
+    <End Role="tb_CTDonHang" Type="Self.tb_CTDonHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_DienThoai">
+        <PropertyRef Name="MaDienThoai" />
+      </Principal>
+      <Dependent Role="tb_CTDonHang">
+        <PropertyRef Name="MaDienThoai" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_CTDonHang_tb_DonHang">
+    <End Role="tb_DonHang" Type="Self.tb_DonHang" Multiplicity="1" />
+    <End Role="tb_CTDonHang" Type="Self.tb_CTDonHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_DonHang">
+        <PropertyRef Name="MaDH" />
+      </Principal>
+      <Dependent Role="tb_CTDonHang">
+        <PropertyRef Name="MaDH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_DienThoai_tb_LoaiSanPham">
+    <End Role="tb_LoaiSanPham" Type="Self.tb_LoaiSanPham" Multiplicity="0..1" />
+    <End Role="tb_DienThoai" Type="Self.tb_DienThoai" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_LoaiSanPham">
+        <PropertyRef Name="MaLoaiSP" />
+      </Principal>
+      <Dependent Role="tb_DienThoai">
+        <PropertyRef Name="MaLoai" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_DienThoai_tb_NhaSanXuat">
+    <End Role="tb_NhaSanXuat" Type="Self.tb_NhaSanXuat" Multiplicity="0..1" />
+    <End Role="tb_DienThoai" Type="Self.tb_DienThoai" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_NhaSanXuat">
+        <PropertyRef Name="MaNSX" />
+      </Principal>
+      <Dependent Role="tb_DienThoai">
+        <PropertyRef Name="MaNSX" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_DonHang_tb_KhachHang">
+    <End Role="tb_KhachHang" Type="Self.tb_KhachHang" Multiplicity="0..1" />
+    <End Role="tb_DonHang" Type="Self.tb_DonHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_KhachHang">
+        <PropertyRef Name="MaKH" />
+      </Principal>
+      <Dependent Role="tb_DonHang">
+        <PropertyRef Name="MaKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Sell_Mobile_1ModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_CTDonHang" EntityType="Self.tb_CTDonHang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_DienThoai" EntityType="Self.tb_DienThoai" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_DonHang" EntityType="Self.tb_DonHang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_KhachHang" EntityType="Self.tb_KhachHang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_LoaiSanPham" EntityType="Self.tb_LoaiSanPham" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_NhaSanXuat" EntityType="Self.tb_NhaSanXuat" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_tb_CTDonHang_tb_DienThoai1" Association="Self.FK_tb_CTDonHang_tb_DienThoai1">
+      <End Role="tb_DienThoai" EntitySet="tb_DienThoai" />
+      <End Role="tb_CTDonHang" EntitySet="tb_CTDonHang" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_CTDonHang_tb_DonHang" Association="Self.FK_tb_CTDonHang_tb_DonHang">
+      <End Role="tb_DonHang" EntitySet="tb_DonHang" />
+      <End Role="tb_CTDonHang" EntitySet="tb_CTDonHang" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_DienThoai_tb_LoaiSanPham" Association="Self.FK_tb_DienThoai_tb_LoaiSanPham">
+      <End Role="tb_LoaiSanPham" EntitySet="tb_LoaiSanPham" />
+      <End Role="tb_DienThoai" EntitySet="tb_DienThoai" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_DienThoai_tb_NhaSanXuat" Association="Self.FK_tb_DienThoai_tb_NhaSanXuat">
+      <End Role="tb_NhaSanXuat" EntitySet="tb_NhaSanXuat" />
+      <End Role="tb_DienThoai" EntitySet="tb_DienThoai" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_DonHang_tb_KhachHang" Association="Self.FK_tb_DonHang_tb_KhachHang">
+      <End Role="tb_KhachHang" EntitySet="tb_KhachHang" />
+      <End Role="tb_DonHang" EntitySet="tb_DonHang" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

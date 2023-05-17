@@ -1,0 +1,22 @@
+.sale {
+    display: flex;
+    background-color: #dc3545;
+    padding: 15px 40px;
+    color: white;
+}
+
+    .sale ul {
+        display: flex;
+    }
+
+        .sale ul li a {
+            position: relative;
+            padding: 0 20px;
+            margin-left: 18px;
+        }
+
+         
+
+            .sale ul li a p {
+                font-size: 11px;
+            }

@@ -1,0 +1,53 @@
+﻿@using mobile_store.Model;
+@model List<tb_LoaiSanPham>
+
+@{ 
+    foreach(var item in Model)
+            {
+
+            
+<li class="mega-dropdown">
+    <a href=""><i class="fa-solid fa-mobile"></i> &nbsp; @item.TenLoaiSP </a>
+    <div class="mega-content">
+        <div class="row">
+            <div class="col-3">
+                <div class="box">
+                    <h4>Chọn theo hãng</h4>
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="box">
+                    <h4>Chọn theo mức giá </h4>
+                    <ul>
+                        <li><a href=""> Dưới 5 triệu </a></li>
+                        <li><a href="">Từ 5-10 triệu  </a></li>
+                        <li><a href="">Từ 10-15 triệu</a></li>
+                        <li><a href="">từ 15-20 triệu</a></li>
+                        <li><a href="">Trên 20 triệu</a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="box">
+                    <h4>Address</h4>
+                    <ul>
+                        <li><a href="">HCM - Q.8: 43 Phạm thế hiển</a> </li>
+                        <li><a href="">hcm- Q.10: 273 Sư vạn hạnh</a></li>
+                        <li><a href="">hcm- Q.1: 26 Lý Tự Trọng </a></li>
+                        <li><a href=""> hcm- Q.5: 128 Hồng bàng</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</li>
+    }
+}

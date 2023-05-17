@@ -1,0 +1,121 @@
+﻿@model mobile_store.Model.tb_KhachHang
+
+@{
+    ViewBag.Title = "LoginAccount";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+<link rel="stylesheet" href="~/asset/css/register.css">
+
+
+<style>
+    .form .heading {
+        font-size: 2rem;
+        padding-bottom: 10px;
+        margin-right: 20px;
+    }
+
+    .form {
+        width: 480px;
+        min-height: 100px;
+        padding: 32px 24px;
+        text-align: left;
+        background: #fff;
+        border-radius: 2px;
+        margin: 24px;
+        align-self: center;
+        box-shadow: 0 10px 15px 0 rgba(51,62,73,.1);
+        margin-left: 550px;
+        margin-top: 180px;
+        margin-bottom: 50px;
+    }
+
+    .form-horizontal {
+        background: white;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    button[type="submit"] {
+        background-color: #dc3545;
+        color: #fff;
+        border: none;
+        margin-top: 30px;
+        padding: 14px 160px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    .form-group {
+        display: flex;
+        margin-bottom: 16px;
+        flex-direction: column;
+    }
+
+
+
+    .control-label {
+        font-weight: 500;
+        padding-bottom: 15px;
+        line-height: 1.8rem;
+        font-size: 15px;
+    }
+
+    .form-control {
+        height: 40px;
+        width: 400px;
+        border: 1px solid #b3b3b3;
+        border-radius: 3px;
+        outline: none;
+        font-size: 13px;
+        text-align: left
+    }
+
+        .form-control:hover {
+            border-color: #1dbfaf;
+        }
+</style>
+
+@Html.AntiForgeryToken()
+
+<div class="main">
+    <form action="" method="POST" class="form" id="form-1">
+        <h3 class="heading">Đăng nhập  </h3>
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+       
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label " })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.MatKhau, htmlAttributes: new { @class = "control-label " })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.MatKhau, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+
+
+        <button type="submit"> Đăng Nhập </button>
+        <div>
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    </form>
+</div>
+
+
+

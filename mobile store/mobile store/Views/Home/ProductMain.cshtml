@@ -1,0 +1,40 @@
+﻿@using mobile_store.Model;
+@model List<tb_DienThoai>
+
+@foreach (var item in Model)
+{
+   <li>
+       <div class=" products-items">
+           <div class="products-top">
+               <a href="@Url.Action("Details","Shop",new {@MaDienThoai=item.MaDienThoai})" class="products-thumb">
+                   <img src="@Url.Content("~/asset/img/Product/"+item.HinhSP1)" width="200px">
+               </a>
+
+               <div class="add-card">
+
+                   <a href="@Url.Action("Details","Shop",new {@MaDienThoai=item.MaDienThoai})"><button class="btn-flat btn-hover"> <span>Buy now</span></button></a>
+                   <button class="btn-card add-cart " type="button"> <i class="fas fa-shopping-cart "></i></button>
+                   <button class="btn-card "> <i class="fas fa-heart"></i></button>
+
+
+               </div>
+           </div>
+
+           <div class="products-infor">
+               <a href="" class="produtcs-meo">@item.TenDienThoai</a> <br>
+               <span class=" price">@String.Format("{0:0,0}", item.GiaBan) VND</span>
+           </div>
+           <div class="star">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i> (7 đánh giá)
+           </div>
+       </div>
+   </li>
+    }
+
+
+
+

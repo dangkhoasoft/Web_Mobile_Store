@@ -1,0 +1,185 @@
+﻿@using mobile_store.Model;
+@model tb_DienThoai
+
+    @{
+        ViewBag.Title = "Details";
+        Layout = "~/Views/Shared/_MainLayout.cshtml";
+    }
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css">
+    <style>
+        .main {
+            margin-top: 250px;
+            margin-bottom: 200px;
+        }
+
+        a {
+            color: black;
+        }
+
+        h5 {
+            font-size: 25px;
+            text-align: left;
+            margin-top: 50px;
+            margin-left: 510px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        h6 {
+            font-size: 16px;
+        }
+
+        h4 {
+            font-size: 26px;
+        }
+
+        td {
+            font-size: 16px;
+        }
+
+        .col-5 {
+            width: 70%;
+        }
+    </style>
+    <script type="text/javascript" src="~/Content/js/bootstrap.js"></script>
+    <script type="text/javascript" src="~/Content/js/query-3.6.0.min.js"></script>
+    <div class="main">
+        <div class="row">
+            <div class="col-5 text-center bg-white" style="margin-top: 15px;">
+                <h5>@Model.TenDienThoai | Chính hãng VN/A </h5>
+                <h7>@Model.tb_LoaiSanPham.MaLoaiSP</h7>
+                <h7>@ViewBag.TenNSX</h7>
+            </div>
+        </div>
+        <div class="container-fluid" style="margin-top:20px">
+            <div class="row">
+                <div class="col-sm-4 bg-white">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="@Url.Content("~/asset/img/iphone/"+Model.HinhSP1)" class="d-block w-100" alt="..." style="width: 250px; height: 400px;">
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="@Url.Content("~/asset/img/iphone/"+Model.HinhSP1)" class="d-block w-100" alt="..." style="width: 250px; height: 400px;">
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="@Url.Content("~/asset/img/iphone/"+Model.HinhSP1)" class="d-block w-100" alt="..." style="width: 250px; height: 400px;">
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="@Url.Content("~/asset/img/iphone/"+Model.HinhSP1)" class="d-block w-100" alt="..." style="width: 250px; height: 400px;">
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="@Url.Content("~/asset/img/iphone/"+Model.HinhSP1)" class="d-block w-100" alt="..." style="width: 250px; height:400px;">
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="@Url.Content("~/asset/img/iphone/"+Model.HinhSP1)" class="d-block w-100" alt="..." style="width: 250px; height: 400px;">
+
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-4 bg-white" style="padding-left: 10px;">
+                    <h4 style="color: red; font-family:tahoma ;">@String.Format("{0:0,0}", Model.GiaBan) VND</h4>
+                    <s>@String.Format("{0:0,0}", Model.GiaBan) VND</s>
+                    <div class="btn-toolbar" style="padding-top:15px;">
+
+                        <button type="button" class="btn btn-light">526GB <h6>29.490.000 đ</h6></button>
+
+                        <button type="button" class="btn btn-light" style="margin-left: 15px;">256GB <h6>26.490.000 đ</h6></button>
+                        <button type="button" class="btn btn-light" style="margin-left: 15px;">128GB <h6>23.490.000 đ</h6></button>
+                    </div>
+
+                    @using (Html.BeginForm("ThemGioHang", "GioHang", new { @MaDT = Model.MaDienThoai, @strUrl = Request.Url.ToString() }))
+                    {
+                        <input type="submit" value="Mua Hang" class="btn btn-danger btn-lg text-center" style="width: 360px;margin-top: 18px;">
+                    }
+                    @using (Html.BeginForm("DatHang", "GioHang", new { @MaDT = Model.MaDienThoai, @strUrl = Request.Url.ToString() }))
+                    {
+                        <input type="submit" value="Đặt Hàng" class="btn btn-danger btn-lg text-center" style="width: 360px;margin-top: 18px;">
+                    }
+                    @*<a href="#" class="btn btn-danger btn-lg  text-center" style="width: 360px;margin-top: 10px;">
+                        <h6 style="color: white;">
+                            Trả Góp <br>
+                            <span>(Visa,Master Card,JCB)</span>
+                        </h6>
+
+
+                    </a>*@
+
+
+
+                </div>
+
+                <div class="col-sm-3 bg-white">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <h2>Chi tiết Sản Phẩm</h2>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Kích thước màn hình</td>
+                                <td>6.1 inches</td>
+
+                            </tr>
+                            <tr>
+                                <td>Công nghệ màn hình</td>
+                                <td>OLED</td>
+
+                            </tr>
+                            <tr>
+                                <td>Camera sau</td>
+                                <td>
+                                    Camera góc rộng: 12MP, f/1.6
+                                    Camera góc siêu rộng: 12MP, ƒ/2.4
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Camera trước</td>
+                                <td>12MP, f/2.2</td>
+                            </tr>
+                            <tr>
+                                <td>Chipset</td>
+                                <td>Apple A15</td>
+                            </tr>
+                            <tr>
+                                <td>Dung lượng RAM</td>
+                                <td>4 GB</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+
+    </div>

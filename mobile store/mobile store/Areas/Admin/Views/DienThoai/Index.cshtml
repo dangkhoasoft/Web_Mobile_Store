@@ -1,0 +1,160 @@
+﻿@model IEnumerable<mobile_store.Model.tb_DienThoai>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TenDienThoai)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GiaBan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mota)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HinhSP1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HinhSP2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HinhSP3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HinhSP4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KichThuocHinhAnh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Camera_Truoc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Camera_Sau)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.He_Dieu_Hanh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CPU)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RAM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Bo_Nho_Trong)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.The_Nho)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sim)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ket_Noi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChuThich)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.moi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tb_LoaiSanPham.TenLoaiSP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tb_NhaSanXuat.TenNSX)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenDienThoai)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GiaBan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mota)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HinhSP1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HinhSP2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HinhSP3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HinhSP4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KichThuocHinhAnh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Camera_Truoc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Camera_Sau)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.He_Dieu_Hanh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CPU)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RAM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Bo_Nho_Trong)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.The_Nho)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sim)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ket_Noi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChuThich)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.moi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tb_LoaiSanPham.TenLoaiSP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tb_NhaSanXuat.TenNSX)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MaDienThoai }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MaDienThoai }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MaDienThoai })
+        </td>
+    </tr>
+}
+
+</table>

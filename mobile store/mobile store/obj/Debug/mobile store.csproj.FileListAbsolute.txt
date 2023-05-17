@@ -1,0 +1,170 @@
+D:\mobile store\mobile store\bin\mobile store.dll.config
+D:\mobile store\mobile store\bin\mobile store.dll
+D:\mobile store\mobile store\bin\mobile store.pdb
+D:\mobile store\mobile store\bin\roslyn\csc.exe
+D:\mobile store\mobile store\bin\roslyn\csc.exe.config
+D:\mobile store\mobile store\bin\roslyn\csc.rsp
+D:\mobile store\mobile store\bin\roslyn\csi.exe
+D:\mobile store\mobile store\bin\roslyn\csi.exe.config
+D:\mobile store\mobile store\bin\roslyn\csi.rsp
+D:\mobile store\mobile store\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\mobile store\mobile store\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\mobile store\mobile store\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\mobile store\mobile store\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\mobile store\mobile store\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\mobile store\mobile store\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\mobile store\mobile store\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\mobile store\mobile store\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\mobile store\mobile store\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\mobile store\mobile store\bin\roslyn\Microsoft.Managed.Core.targets
+D:\mobile store\mobile store\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\mobile store\mobile store\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\mobile store\mobile store\bin\roslyn\System.AppContext.dll
+D:\mobile store\mobile store\bin\roslyn\System.Collections.Immutable.dll
+D:\mobile store\mobile store\bin\roslyn\System.Console.dll
+D:\mobile store\mobile store\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\mobile store\mobile store\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\mobile store\mobile store\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\mobile store\mobile store\bin\roslyn\System.Globalization.Calendars.dll
+D:\mobile store\mobile store\bin\roslyn\System.IO.Compression.dll
+D:\mobile store\mobile store\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\mobile store\mobile store\bin\roslyn\System.IO.FileSystem.dll
+D:\mobile store\mobile store\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\mobile store\mobile store\bin\roslyn\System.Net.Http.dll
+D:\mobile store\mobile store\bin\roslyn\System.Net.Sockets.dll
+D:\mobile store\mobile store\bin\roslyn\System.Reflection.Metadata.dll
+D:\mobile store\mobile store\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\mobile store\mobile store\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\mobile store\mobile store\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\mobile store\mobile store\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\mobile store\mobile store\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\mobile store\mobile store\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\mobile store\mobile store\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\mobile store\mobile store\bin\roslyn\System.ValueTuple.dll
+D:\mobile store\mobile store\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\mobile store\mobile store\bin\roslyn\System.Xml.XmlDocument.dll
+D:\mobile store\mobile store\bin\roslyn\System.Xml.XPath.dll
+D:\mobile store\mobile store\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\mobile store\mobile store\bin\roslyn\vbc.exe
+D:\mobile store\mobile store\bin\roslyn\vbc.exe.config
+D:\mobile store\mobile store\bin\roslyn\vbc.rsp
+D:\mobile store\mobile store\bin\roslyn\VBCSCompiler.exe
+D:\mobile store\mobile store\bin\roslyn\VBCSCompiler.exe.config
+D:\mobile store\mobile store\bin\Antlr3.Runtime.dll
+D:\mobile store\mobile store\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\mobile store\mobile store\bin\Microsoft.Web.Infrastructure.dll
+D:\mobile store\mobile store\bin\Newtonsoft.Json.dll
+D:\mobile store\mobile store\bin\System.Web.Helpers.dll
+D:\mobile store\mobile store\bin\System.Web.Mvc.dll
+D:\mobile store\mobile store\bin\System.Web.Optimization.dll
+D:\mobile store\mobile store\bin\System.Web.Razor.dll
+D:\mobile store\mobile store\bin\System.Web.WebPages.Deployment.dll
+D:\mobile store\mobile store\bin\System.Web.WebPages.dll
+D:\mobile store\mobile store\bin\System.Web.WebPages.Razor.dll
+D:\mobile store\mobile store\bin\WebGrease.dll
+D:\mobile store\mobile store\bin\System.Web.Helpers.xml
+D:\mobile store\mobile store\bin\System.Web.Mvc.xml
+D:\mobile store\mobile store\bin\System.Web.Optimization.xml
+D:\mobile store\mobile store\bin\System.Web.Razor.xml
+D:\mobile store\mobile store\bin\System.Web.WebPages.xml
+D:\mobile store\mobile store\bin\System.Web.WebPages.Deployment.xml
+D:\mobile store\mobile store\bin\System.Web.WebPages.Razor.xml
+D:\mobile store\mobile store\bin\Newtonsoft.Json.xml
+D:\mobile store\mobile store\bin\Antlr3.Runtime.pdb
+D:\mobile store\mobile store\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\mobile store\mobile store\obj\Debug\mobile store.csproj.CoreCompileInputs.cache
+D:\mobile store\mobile store\obj\Debug\mobile store.csproj.CopyComplete
+D:\mobile store\mobile store\obj\Debug\mobile store.dll
+D:\mobile store\mobile store\obj\Debug\mobile store.pdb
+D:\mobile store\mobile store\bin\EntityFramework.dll
+D:\mobile store\mobile store\bin\EntityFramework.SqlServer.dll
+D:\mobile store\mobile store\bin\EntityFramework.xml
+D:\mobile store\mobile store\bin\EntityFramework.SqlServer.xml
+D:\mobile store\mobile store\obj\Debug\mobile store.csproj.AssemblyReference.cache
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\obj\Debug\mobile store.csproj.AssemblyReference.cache
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\obj\Debug\mobile store.csproj.CoreCompileInputs.cache
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\obj\Debug\mobile store.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\obj\Debug\mobile store.pdb
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\mobile store.dll.config
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\mobile store.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\mobile store.pdb
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\csc.exe
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\csc.exe.config
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\csc.rsp
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\csi.exe
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\csi.exe.config
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\csi.rsp
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\Microsoft.Managed.Core.targets
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.AppContext.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.Collections.Immutable.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.Console.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.Globalization.Calendars.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.IO.Compression.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.IO.FileSystem.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.Net.Http.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.Net.Sockets.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.Reflection.Metadata.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.ValueTuple.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.Xml.XmlDocument.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.Xml.XPath.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\vbc.exe
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\vbc.exe.config
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\vbc.rsp
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\VBCSCompiler.exe
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\roslyn\VBCSCompiler.exe.config
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\Antlr3.Runtime.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\EntityFramework.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\EntityFramework.SqlServer.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\Microsoft.Web.Infrastructure.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\Newtonsoft.Json.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\System.Web.Helpers.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\System.Web.Mvc.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\System.Web.Optimization.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\System.Web.Razor.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\System.Web.WebPages.Deployment.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\System.Web.WebPages.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\System.Web.WebPages.Razor.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\WebGrease.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\EntityFramework.xml
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\EntityFramework.SqlServer.xml
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\System.Web.Helpers.xml
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\System.Web.Mvc.xml
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\System.Web.Optimization.xml
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\System.Web.Razor.xml
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\System.Web.WebPages.xml
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\System.Web.WebPages.Deployment.xml
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\System.Web.WebPages.Razor.xml
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\Newtonsoft.Json.xml
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\Antlr3.Runtime.pdb
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\obj\Debug\mobile store.csproj.CopyComplete
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\PagedList.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\PagedList.Mvc.dll
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\PagedList.xml
+D:\mobileStore-web-chinh-thuc\mobile store\mobile store\bin\PagedList.Mvc.xml

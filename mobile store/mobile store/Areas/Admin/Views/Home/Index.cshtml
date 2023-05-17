@@ -1,0 +1,174 @@
+﻿@using PagedList.Mvc;
+@using PagedList;
+@model PagedList.PagedList<mobile_store.Model.tb_DienThoai>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Quan Ly San Pham</h2>
+
+<p>
+    @Html.ActionLink("Thêm mới Sách ", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.First().MaDienThoai)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().TenDienThoai)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().GiaBan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Mota)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().MaLoai)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().HinhSP1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().HinhSP2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().HinhSP3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().HinhSP4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().KichThuocHinhAnh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Camera_Truoc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Camera_Sau)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().He_Dieu_Hanh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().CPU)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().RAM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Bo_Nho_Trong)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().The_Nho)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Sim)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Ket_Noi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Pin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().ChuThich)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().MaNSX)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaDienThoai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenDienThoai)
+            </td>
+            <td>
+               <div></div> @Html.DisplayFor(modelItem =>  item.GiaBan ))<a>VNĐ</a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mota)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tb_LoaiSanPham.TenLoaiSP)
+            </td>
+            <td>
+                <div><img src="@Url.Content("~/asset/img/Product/"+item.HinhSP1)" width="150" height="150" /></div>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HinhSP2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HinhSP3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HinhSP4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KichThuocHinhAnh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Camera_Truoc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Camera_Sau)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.He_Dieu_Hanh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CPU)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RAM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bo_Nho_Trong)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.The_Nho)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sim)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ket_Noi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChuThich)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tb_NhaSanXuat.TenNSX)
+            </td>
+            <td>
+                @Html.ActionLink("Chỉnh sửa", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Hiển thị", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Xóa", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+    }
+
+</table>
+@*Tạo link liên kết các trang*@
+Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/ @Model.PageCount
+<div class="MenuTrang">
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
+</div>
+<style>
+    .MenuTrang {
+        display: inline;
+    }
+</style>
+

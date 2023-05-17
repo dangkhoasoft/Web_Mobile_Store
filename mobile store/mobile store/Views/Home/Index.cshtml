@@ -1,0 +1,432 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<meta name="viewport" content="width=device-width" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="~/asset/css/menu.css">
+<link rel="stylesheet" href="~/asset/css/button.css">
+<link rel="stylesheet" href="~/asset/css/products.css">
+<link rel="stylesheet" href="~/asset/css/sale.css">
+<link rel="stylesheet" href="~/asset/css/slideshow.css">
+<link rel="stylesheet" href="~/asset/css/footer.css">
+<link rel="stylesheet" href="~/asset/css/register.css">
+<link rel="stylesheet" href="~/asset/css/slick.css">
+<link rel="stylesheet" href="~/asset/css/slick-theme.css">
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="~/asset/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
+<div class="banner">
+    <img class="mySlides " src="~/asset/img/banner/banner1.png" alt="" width="1530px">
+    <img class="mySlides " src="~/asset/img/banner/banner2.png" alt="" width="1530px">
+    <img class="mySlides " src="~/asset/img/banner/banner3.png" alt="" width="1530px">
+    <img class="mySlides " src="~/asset/img/banner/banner4.png" alt="" width="1530px">
+    <img class="mySlides " src="~/asset/img/banner/banner5.png" alt="" width="1530px">
+
+</div>
+<script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {
+            slideIndex = 1
+        }
+        x[slideIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000);
+    }
+</script>
+<section class="regular slider">
+    <div>
+        <img src="~/asset/img/banner/banner9.png">
+    </div>
+    <div>
+        <img src="~/asset/img/banner/banner10.png">
+    </div>
+    <div>
+        <img src="~/asset/img/banner/banner13.png">
+    </div>
+    <div>
+        <img src="~/asset/img/banner/banner14.png">
+    </div>
+    <div>
+        <img src="~/asset/img/banner/banner15.png">
+    </div>
+
+</section>
+
+<div class="wrapper">
+
+    <div class="Headline">
+
+        <h2> Sản Phẩm Mới</h2>
+
+    </div>
+</div>
+
+<ul class="products">
+    @Html.Action("ProductMain", "Home")
+    
+</ul>
+
+<div class="view">
+    <a href="">
+        <button class="btn-view btn-css">
+            HIỂN THỊ THÊM
+        </button>
+    </a>
+</div>
+<section class="regular slider">
+    <div>
+        <a href=""><img src="~/asset/img/banner/banner16.png"></a>
+        
+    </div>
+    <div>
+        <img src="~/asset/img/banner/banner11.png">
+    </div>
+    <div>
+        <img src="~/asset/img/banner/banner12.png">
+    </div>
+    <div>
+        <img src="~/asset/img/banner/banner17.png">
+    </div>
+    <div>
+        <img src="~/asset/img/banner/banner18.png">
+    </div>
+
+</section>
+
+
+<div class="wrapper">
+    <div class="Headline">
+        <h2> Sản Phẩm Nổi Bật</h2>
+    </div>
+</div>
+
+<ul class="products">
+    <li>
+        <div class=" products-items">
+            <div class="products-top">
+                <a href="" class="products-thumb">
+                    <img src="~/asset/img/oppo/oppo-find-x5-pro-den-thumb-600x600-removebg-preview.png" width="200px">
+                </a>
+
+                <div class="add-card">
+
+                    <a href=""><button class="btn-flat btn-hover"> <span>Buy now</span></button></a>
+                    <button class="btn-card add-cart " type="button"> <i class="fas fa-shopping-cart "></i></button>
+                    <button class="btn-card "> <i class="fas fa-heart"></i></button>
+
+
+                </div>
+            </div>
+
+            <div class="products-infor">
+                <a href="" class="produtcs-meo"> Oppo find 5 Black   </a> <br>
+                <span class=" price">7.900.000đ</span>
+            </div>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i> (7 đánh giá)
+            </div>
+            </a>
+        </div>
+    </li>
+    <li>
+        <div class=" products-items">
+            <div class="products-top">
+                <a href="" class="products-thumb">
+                    <img src="~/asset/img/samsung/samsunga14.png" width="200px">
+                </a>
+
+                <div class="add-card">
+
+                    <a href=""><button class="btn-flat btn-hover"> <span>Buy now</span></button></a>
+                    <button class="btn-card add-cart " type="button"> <i class="fas fa-shopping-cart "></i></button>
+                    <button class="btn-card "> <i class="fas fa-heart"></i></button>
+
+
+                </div>
+            </div>
+
+            <div class="products-infor">
+                <a href="" class="produtcs-meo"> Samsung a14   </a> <br>
+                <span class=" price">3.900.000đ</span>
+            </div>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i> (7 đánh giá)
+            </div>
+            </a>
+        </div>
+    </li>
+    <li>
+        <div class=" products-items">
+            <div class="products-top">
+                <a href="" class="products-thumb">
+                    <img src="~/asset/img/samsung/samsung-galaxy-s23-ultra-1-600x600-removebg-preview.png" width="200px">
+                </a>
+
+                <div class="add-card">
+
+                    <a href=""><button class="btn-flat btn-hover"> <span>Buy now</span></button></a>
+                    <button class="btn-card add-cart " type="button"> <i class="fas fa-shopping-cart "></i></button>
+                    <button class="btn-card "> <i class="fas fa-heart"></i></button>
+
+
+                </div>
+            </div>
+
+            <div class="products-infor">
+                <a href="" class="produtcs-meo"> Samsung S23 Ultra   </a> <br>
+                <span class=" price">27.900.000đ</span>
+            </div>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i> (7 đánh giá)
+            </div>
+            </a>
+        </div>
+    </li>
+    <li>
+        <div class=" products-items">
+            <div class="products-top">
+                <a href="" class="products-thumb">
+                    <img src="~/asset/img/oppo/oppo-reno8t-vang1-thumb-600x600-removebg-preview.png" width="200px">
+                </a>
+
+                <div class="add-card">
+
+                    <a href=""><button class="btn-flat btn-hover"> <span>Buy now</span></button></a>
+                    <button class="btn-card add-cart " type="button"> <i class="fas fa-shopping-cart "></i></button>
+                    <button class="btn-card "> <i class="fas fa-heart"></i></button>
+
+
+                </div>
+            </div>
+
+            <div class="products-infor">
+                <a href="" class="produtcs-meo"> Oppo Reno8 Gold   </a> <br>
+                <span class=" price">17.900.000đ</span>
+            </div>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i> (7 đánh giá)
+            </div>
+            </a>
+        </div>
+    </li>
+    <li>
+        <div class=" products-items">
+            <div class="products-top">
+                <a href="" class="products-thumb">
+                    <img src="~/asset/img/samsung/samsungs23plus.png" width="200px">
+                </a>
+
+                <div class="add-card">
+
+                    <a href=""><button class="btn-flat btn-hover"> <span>Buy now</span></button></a>
+                    <button class="btn-card add-cart " type="button"> <i class="fas fa-shopping-cart "></i></button>
+                    <button class="btn-card "> <i class="fas fa-heart"></i></button>
+
+
+                </div>
+            </div>
+
+            <div class="products-infor">
+                <a href="" class="produtcs-meo"> Samsung S23 plus   </a> <br>
+                <span class=" price">27.900.000đ</span>
+            </div>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i> (7 đánh giá)
+            </div>
+            </a>
+        </div>
+    </li>
+    <li>
+        <div class=" products-items">
+            <div class="products-top">
+                <a href="" class="products-thumb">
+                    <img src="~/asset/img/oppo/oppo-reno8-pro-thumb-xanh-1-600x600-removebg-preview.png" width="200px">
+                </a>
+
+                <div class="add-card">
+
+                    <a href=""><button class="btn-flat btn-hover"> <span>Buy now</span></button></a>
+                    <button class="btn-card add-cart " type="button"> <i class="fas fa-shopping-cart "></i></button>
+                    <button class="btn-card "> <i class="fas fa-heart"></i></button>
+
+
+                </div>
+            </div>
+
+            <div class="products-infor">
+                <a href="" class="produtcs-meo"> Oppo Reno 8    </a> <br>
+                <span class=" price">17.900.000đ</span>
+            </div>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i> (7 đánh giá)
+            </div>
+            </a>
+        </div>
+    </li>
+    <li>
+        <div class=" products-items">
+            <div class="products-top">
+                <a href="" class="products-thumb">
+                    <img src="~/asset/img/samsung/samsungs22_pink.png" width="200px">
+                </a>
+
+                <div class="add-card">
+
+                    <a href=""><button class="btn-flat btn-hover"> <span>Buy now</span></button></a>
+                    <button class="btn-card add-cart " type="button"> <i class="fas fa-shopping-cart "></i></button>
+                    <button class="btn-card "> <i class="fas fa-heart"></i></button>
+
+
+                </div>
+            </div>
+
+            <div class="products-infor">
+                <a href="" class="produtcs-meo"> Samsung S22 Pink   </a> <br>
+                <span class=" price">29.900.000đ</span>
+            </div>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i> (7 đánh giá)
+            </div>
+            </a>
+        </div>
+    </li>
+    <li>
+        <div class=" products-items">
+            <div class="products-top">
+                <a href="" class="products-thumb">
+                    <img src="~/asset/img/iphone/iphone14_1tb.png" width="200px">
+                </a>
+
+                <div class="add-card">
+
+                    <a href=""><button class="btn-flat btn-hover"> <span>Buy now</span></button></a>
+                    <button class="btn-card add-cart " type="button"> <i class="fas fa-shopping-cart "></i></button>
+                    <button class="btn-card "> <i class="fas fa-heart"></i></button>
+
+
+                </div>
+            </div>
+
+            <div class="products-infor">
+                <a href="" class="produtcs-meo"> Iphone 14 1tb   </a> <br>
+                <span class=" price">27.900.000đ</span>
+            </div>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i> (7 đánh giá)
+            </div>
+            </a>
+        </div>
+    </li>
+    <li>
+        <div class=" products-items">
+            <div class="products-top">
+                <a href="" class="products-thumb">
+                    <img src="~/asset/img/oppo/oppo-a55-4g-black-600x600-removebg-preview.png" width="200px">
+                </a>
+
+                <div class="add-card">
+
+                    <a href=""><button class="btn-flat btn-hover"> <span>Buy now</span></button></a>
+                    <button class="btn-card add-cart " type="button"> <i class="fas fa-shopping-cart "></i></button>
+                    <button class="btn-card "> <i class="fas fa-heart"></i></button>
+
+
+                </div>
+            </div>
+
+            <div class="products-infor">
+                <a href="" class="produtcs-meo"> Oppo A55 Black  </a> <br>
+                <span class=" price">10.900.000đ</span>
+            </div>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i> (7 đánh giá)
+            </div>
+            </a>
+        </div>
+    </li>
+    <li>
+        <div class=" products-items">
+            <div class="products-top">
+                <a href="" class="products-thumb">
+                    <img src="~/asset/img/oppo/OPPO-a16k-den-nhan-thumb-600x600-removebg-preview.png" width="200px">
+                </a>
+
+                <div class="add-card">
+
+                    <a href=""><button class="btn-flat btn-hover"> <span>Buy now</span></button></a>
+                    <button class="btn-card add-cart " type="button"> <i class="fas fa-shopping-cart "></i></button>
+                    <button class="btn-card "> <i class="fas fa-heart"></i></button>
+
+
+                </div>
+            </div>
+
+            <div class="products-infor">
+                <a href="" class="produtcs-meo"> Oppo A16 Black  </a> <br>
+                <span class=" price">7.900.000đ</span>
+            </div>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i> (7 đánh giá)
+            </div>
+            </a>
+        </div>
+    </li>
+
+</ul>
+<div class="view">
+    <a href="">
+        <button class="btn-view btn-css">
+            HIỂN THỊ THÊM
+        </button>
+    </a>
+</div>
+
